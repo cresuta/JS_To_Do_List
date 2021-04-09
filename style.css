@@ -42,3 +42,8 @@ body {
     top: 23px;
     font-size: 1.5em;
 }
+
+.add:hover {
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+}
