@@ -27,6 +27,13 @@ body {
     color: #002F2F;
 }
 
+.input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .add {
     background-color: #046380;
     width: 70px;
