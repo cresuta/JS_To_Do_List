@@ -3,11 +3,12 @@
 #A7A37E
 #EFECCA
 #046380
-#002F2F
+#
 */
 
 body {
     color: #A7A37E;
+    background-color: #A7A37E;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -25,13 +26,44 @@ body {
 
 #title {
     color: #002F2F;
+    font-size: 48px;
+    text-align: center;
 }
 
-.input {
+.header {
+    border-bottom: 2px solid #A7A37E;
+    height: 112px;
+    width: inherit;
+}
+
+.listItem {
+    border-bottom: 2px solid #A7A37E;
+    width: inherit;
+    height: 40px;
+}
+
+.divider {
+    width: 0px;
+    border-left: 2px solid #A7A37E;
+    height: inherit;
+    position: absolute;
+    margin-right: 300px;
+}
+
+.inputBox {
+    margin-top: 38px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#input {
+    border-radius: 2px;
+    border: none;
+    width: 350px;
+    height: 40px;
+    margin-left: 80px;
 }
 
 .add {
@@ -40,7 +72,9 @@ body {
     height: 70px;
     border-radius: 50%;
     position: absolute;
-    top: 765px;
+    margin-left: 15px;
+    /* left: 412px; */
+    top: 160px;
 }
 
 .add i {
