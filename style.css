@@ -64,6 +64,12 @@ body {
     border-bottom: 2px solid #A7A37E;
     width: inherit;
     height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.icons {
+   margin-left: 8.5px;
 }
 
 .divider {
