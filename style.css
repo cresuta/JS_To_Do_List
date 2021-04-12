@@ -34,6 +34,30 @@ body {
     border-bottom: 2px solid #A7A37E;
     height: 112px;
     width: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.add {
+    background-color: #046380;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+    right: 30px;
+}
+
+.add i {
+    position: absolute;
+    left: 9px;
+    top: 8px;
+    font-size: 1.2em;
+}
+
+.add:hover {
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
 }
 
 .listItem {
@@ -51,40 +75,13 @@ body {
 }
 
 .inputBox {
-    margin-top: 38px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#input {
-    border-radius: 2px;
-    border: none;
-    width: 350px;
-    height: 40px;
     margin-left: 80px;
 }
 
-.add {
-    background-color: #046380;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    position: absolute;
-    margin-left: 15px;
-    /* left: 412px; */
-    top: 160px;
+#input {
+    border-radius: 8px;
+    border: none;
+    width: 250px;
+    height: 40px;
 }
 
-.add i {
-    position: absolute;
-    left: 25px;
-    top: 23px;
-    font-size: 1.5em;
-}
-
-.add:hover {
-    transform: scale(1.1, 1.1);
-    cursor: pointer;
-}
