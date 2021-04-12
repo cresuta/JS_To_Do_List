@@ -72,6 +72,10 @@ body {
    margin-left: 8.5px;
 }
 
+.todo {
+    margin-left: 42px;
+}
+
 .divider {
     width: 0px;
     border-left: 2px solid #A7A37E;
