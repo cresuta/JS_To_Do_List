@@ -1,19 +1,35 @@
 const addBtn = document.querySelector('.add');
 const userInput = document.querySelector('#input');
+const listContainer = document.querySelector('.todo-list')
+
 const icons = document.querySelector('.icons');
 const todo = document.querySelector('.todo');
 
-const deleteIcon = document.createElement('i');
-const editIcon = document.createElement('i');
-const completedIcon = document.createElement('i');
+
 
 addBtn.addEventListener('click', () => {
-    deleteIcon.classList.add('far', 'fa-trash-alt', 'icons');
-    editIcon.classList.add('far', 'fa-edit', 'icons');
+    const deleteIcon = document.createElement('i');
+    const editIcon = document.createElement('i');
+    const completedIcon = document.createElement('i');
+
     completedIcon.classList.add('far', 'fa-check-square', 'icons');
-    icons.appendChild(deleteIcon);
-    icons.appendChild(editIcon);
-    icons.appendChild(completedIcon);
-    todo.append(userInput.value);
-    userInput.value = null;
-})
+    editIcon.classList.add('fas', 'fa-edit', 'icons');
+    deleteIcon.classList.add('fas', 'fa-trash-alt', 'icons');
+
+    const paragraph = document.createElement('li');
+    paragraph.classList.add('todo-item');
+    paragraph.innerText = userInput.value;
+
+
+    listContainer.prepend(paragraph);
+
+    listContainer.prepend(deleteIcon);
+    listContainer.prepend(editIcon);
+    listContainer.prepend(completedIcon);
+
+
+    paragraph.addEventListener('click', () => {
+        paragraph.classList.toggle('crossed-out');
+    });
+
+});

@@ -3,7 +3,7 @@
 #A7A37E
 #EFECCA
 #046380
-#
+#002F2F
 */
 
 body {
@@ -60,16 +60,18 @@ body {
     cursor: pointer;
 }
 
-.listItem {
+.backgroundLines {
     border-bottom: 2px solid #A7A37E;
     width: inherit;
     height: 40px;
     display: flex;
     align-items: center;
+    color: #002F2F;
 }
 
 .icons {
-   margin-left: 8.5px;
+   /* margin-left: 8.5px; */
+   position: absolute;
 }
 
 .todo {
@@ -95,3 +97,22 @@ body {
     height: 40px;
 }
 
+.todo-list-container {
+    position: absolute;
+    margin-top: 110px;
+}
+
+.todo-list {
+    width: 300px;
+}
+
+.crossed-out {
+    text-decoration: line-through;
+}
+
+.todo-item {
+    text-align: center;
+    margin-bottom: 23.6px;
+    list-style: none;
+    color: #002F2F;
+}
