@@ -5,8 +5,6 @@ const listContainer = document.querySelector('.todo-list')
 const icons = document.querySelector('.icons');
 const todo = document.querySelector('.todo');
 
-
-
 addBtn.addEventListener('click', () => {
     const deleteIcon = document.createElement('i');
     const editIcon = document.createElement('i');
@@ -26,7 +24,6 @@ addBtn.addEventListener('click', () => {
     listContainer.prepend(deleteIcon);
     listContainer.prepend(editIcon);
     listContainer.prepend(completedIcon);
-
 
     paragraph.addEventListener('click', () => {
         paragraph.classList.toggle('crossed-out');

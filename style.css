@@ -69,15 +69,6 @@ body {
     color: #002F2F;
 }
 
-.icons {
-   /* margin-left: 8.5px; */
-   position: absolute;
-}
-
-.todo {
-    margin-left: 42px;
-}
-
 .divider {
     width: 0px;
     border-left: 2px solid #A7A37E;
@@ -97,22 +88,35 @@ body {
     height: 40px;
 }
 
+.icons {
+   margin-left: 8.5px;
+   /* position: absolute; */
+}
+
+.todo {
+    margin-left: 42px;
+}
+
+.todo-item {
+    text-align: center;
+    /* margin left!!!! */
+    margin-left: 45px;
+    margin-bottom: 23.6px;
+    list-style: none;
+    color: #002F2F;
+}
+
 .todo-list-container {
     position: absolute;
     margin-top: 110px;
 }
 
 .todo-list {
-    width: 300px;
+    width: 500px;
+    display: flex;
+    padding-left: 20px;
 }
 
 .crossed-out {
     text-decoration: line-through;
-}
-
-.todo-item {
-    text-align: center;
-    margin-bottom: 23.6px;
-    list-style: none;
-    color: #002F2F;
 }
