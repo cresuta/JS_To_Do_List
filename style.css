@@ -90,20 +90,11 @@ body {
 
 .icons {
    margin-left: 8.5px;
-   /* position: absolute; */
+   margin-top: 8.5px;
 }
 
 .todo {
     margin-left: 42px;
-}
-
-.todo-item {
-    text-align: center;
-    /* margin left!!!! */
-    margin-left: 45px;
-    margin-bottom: 23.6px;
-    list-style: none;
-    color: #002F2F;
 }
 
 .todo-list-container {
@@ -113,8 +104,15 @@ body {
 
 .todo-list {
     width: 500px;
-    display: flex;
     padding-left: 20px;
+    margin: 0;
+}
+
+.todo-item {
+    text-align: center;
+    align-items: center;
+    list-style: none;
+    color: #002F2F;
 }
 
 .crossed-out {
