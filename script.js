@@ -9,6 +9,7 @@ addBtn.addEventListener('click', () => {
     const deleteIcon = document.createElement('i');
     const editIcon = document.createElement('i');
     const completedIcon = document.createElement('i');
+    const textLine = document.createElement('span');
 
     completedIcon.classList.add('far', 'fa-check-square', 'icons');
     editIcon.classList.add('fas', 'fa-edit', 'icons');
@@ -16,17 +17,36 @@ addBtn.addEventListener('click', () => {
 
     const paragraph = document.createElement('li');
     paragraph.classList.add('todo-item');
-    paragraph.innerText = userInput.value;
+    const text = paragraph.appendChild(textLine);
+    text.innerText = userInput.value;
+    text.classList.add('text-item');
 
-
+    // add todo item line
     listContainer.prepend(paragraph);
 
-    listContainer.prepend(deleteIcon);
-    listContainer.prepend(editIcon);
-    listContainer.prepend(completedIcon);
+    // Add item's buttons
+    paragraph.prepend(deleteIcon);
+    paragraph.prepend(editIcon);
+    paragraph.prepend(completedIcon);
 
-    paragraph.addEventListener('click', () => {
-        paragraph.classList.toggle('crossed-out');
+    // Click item to cross out
+    text.addEventListener('click', () => {
+        text.classList.toggle('crossed-out');
+    });
+
+    // Delete line item
+    deleteIcon.addEventListener('click', () => {
+        paragraph.remove();
+    });
+
+    // Edit line item
+    editIcon.addEventListener('click', () => {
+        // Add edit functionality here...
+        null;
+    });
+
+    completedIcon.addEventListener('click', () => {
+        text.classList.toggle('crossed-out');
     });
 
 });
