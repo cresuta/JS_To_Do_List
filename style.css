@@ -92,6 +92,12 @@ body {
    margin-left: 8.5px;
    margin-top: 8.5px;
    -ms-flex-align: baseline;
+   /* colors */
+   color: #C0C0C0;
+}
+
+.icons:hover {
+    color: #002F2F;
 }
 
 .todo {
