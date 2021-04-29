@@ -29,11 +29,6 @@ addBtn.addEventListener('click', () => {
     paragraph.prepend(editIcon);
     paragraph.prepend(completedIcon);
 
-    // Click item to cross out
-    text.addEventListener('click', () => {
-        text.classList.toggle('crossed-out');
-    });
-
     // Delete line item
     deleteIcon.addEventListener('click', () => {
         paragraph.remove();
