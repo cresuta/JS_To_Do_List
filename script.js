@@ -20,6 +20,8 @@ addBtn.addEventListener('click', () => {
     const text = paragraph.appendChild(textLine);
     text.innerText = userInput.value;
     text.classList.add('text-item');
+    // input field resets after each todo added
+    userInput.value = null;
 
     // add todo item line
     listContainer.prepend(paragraph);
